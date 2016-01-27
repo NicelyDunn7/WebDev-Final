@@ -1,0 +1,28 @@
+<head>
+	<script>
+		$(function(){
+			$(".draggable").draggable();
+		});
+		$(".draggable").on('mousedown', function(event) { 
+			$(".draggable").css('z-index','1');
+			$( this ).css('z-index','1000');
+		});
+	</script>
+</head>
+<body>
+	<div id="dspcolumns" class="draggable">
+		<img class="img" src="images/dspcolumns.jpg" alt="dspcolumns" height="354px" width="540px">
+	</div>
+	<div id="dsphoco" class="draggable">
+		<img class="img" src="images/dsphoco.jpg" alt="dsphoco" height="318px" width="480px">
+	</div>
+	<div id="dspjc" class="draggable">
+		<img class="img" src="images/dspjc.jpg" alt="dspjc" height="303px" width="480px">
+	</div>
+	<div id="dspparade" class="draggable">
+		<img class="img" src="images/dspparade.jpg" alt="dspparade" height="362px" width="483px">
+	</div>
+	<div id="dspstoop" class="draggable">
+		<img class="img" src="images/dspstoop.jpg" alt="dspstoop" height="486px" width="327px">
+	</div>
+</body>
