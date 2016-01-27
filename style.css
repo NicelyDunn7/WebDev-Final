@@ -1,0 +1,161 @@
+/* Home Document Style Sheet */
+	#content{
+		background-color: white;
+		width: 1000px;
+		margin: 0px auto;
+		color: black;
+		font-weight: bold;
+		border: 2px solid rgb(0, 96, 68);
+		font-family: tahoma;
+	}
+	#content p{
+		line-height: 150%;
+		padding: 5px;
+	}
+
+	
+/* Header Document Style Sheet */	
+	#header{
+		background-color: rgb(0, 96, 68);
+		margin: 10px auto;
+		height: 250px;
+		width: 1000px;
+		color: rgb(253, 226, 0);
+	}
+	#header .col{
+		float: left;
+		margin: 10px;
+	}
+	#crest{
+		width: 200px;
+	}
+	#text{
+		width: 520px;
+		padding: 70px 0px;
+		text-align: center;
+	}
+	#pin{
+		width: 200px;
+	}
+	#header #text #h{
+		margin-left: 75px;
+	}
+	
+	
+/* Footer Document Style Sheet */	
+	#footer{
+		background-color: rgb(0, 96, 68);
+		text-align: center;
+		width: 1000px;
+		color: rgb(253, 226, 0);
+		margin: auto;
+	}
+	#bmbl{
+		padding-top: 2px;
+	}
+	#contact{
+		padding-bottom: 2px;
+	}
+	
+	
+/* Navigation Bar Document Style Sheet */	
+	#navbar{
+		background-color: rgb(64, 31, 128);
+		width: 1000px;
+		margin: 5px auto;
+		color: white;
+	}
+	#navbar ul{
+		list-style: none;
+		padding: 0;
+		text-align: center;
+	}
+	#navbar ul li {
+		display: inline-block;
+		color: white;
+		padding: 5px 53px;
+		font-size: 135%;
+		border: 2px solid black;
+		cursor: pointer;
+	}
+	
+
+/* Brotherhood Document Style Sheet */
+	#dspcolumns{
+		height: 354px;
+		width: 540px;
+	}
+	#dsphoco{
+		height: 318px;
+		width: 480px;
+	}
+	#dspjc{
+		height: 303px;
+		width: 480px;
+	}
+	#dspparade{
+		height: 362px;
+		width: 483px;
+	}
+	#dspstoop{
+		height: 486px;
+		width: 327px;
+	}
+	.draggable{
+		cursor: move;
+		margin: 10px;
+		border: 10px solid green;
+		border-radius: 100px;
+	}
+	.img{
+		border-radius: 90px;
+	}
+	
+	
+/* Recruitment Document Style Sheet */
+	#theq{
+		text-align: center;
+	}
+	#form{
+		width: 500px;
+		margin: 0px auto 25px auto;
+	}
+	.recruiti{
+		width: 500px;
+	}
+	#tumay{
+		width: 500px;
+		height: 200px;
+	}
+
+
+/* Login Document Style Sheet */
+	#rushes{
+		border-collapse: collapse;
+	}
+	#rushes th{
+		border: 1px solid black;
+		padding: 5px;
+		font-size: 150%;
+		text-decoration: underline;
+		color: rgb(64, 31, 128);
+	}
+	#rushes td{
+		border: 1px solid black;
+		padding: 5px;
+	}
+	#dbshell{
+		text-align: center;
+		margin: 25px auto;
+	}
+	table{
+		margin: 25px auto;
+	}
+	#loginshell{
+		width: 744px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#rdb{
+		text-decoration: underline;
+	}
