@@ -1,0 +1,72 @@
+<head>
+	<script>
+		function validateForm(){
+			var value = document.forms["rushform"]["firstname"].value;
+			if(value == null || value == "") {
+				alert("First Name field must be filled out");
+				return false;
+			}
+			if(value.length > 50){
+				alert("First Name field must be less than 50 characters");
+				return false;
+			}
+			
+			var value = document.forms["rushform"]["lastname"].value;
+			if(value == null || value == "") {
+				alert("Last Name field must be filled out");
+				return false;
+			}
+			if(value.length > 50){
+				alert("Last Name field must be less than 50 characters");
+				return false;
+			}
+			
+			var value = document.forms["rushform"]["hometown"].value;
+			if(value == null || value == "") {
+				alert("Hometown field must be filled out");
+				return false;
+			}
+			if(value.length > 50){
+				alert("Hometown field must be less than 50 characters");
+				return false;
+			}
+			
+			var value = document.forms["rushform"]["highschool"].value;
+			if(value == null || value == "") {
+				alert("High School field must be filled out");
+				return false;
+			}
+			if(value.length > 50){
+				alert("High School field must be less than 50 characters");
+				return false;
+			}
+			var value = document.forms["rushform"]["email"].value;
+			if(value == null || value == "") {
+				alert("eMail Address field must be filled out");
+				return false;
+			}
+			if(value.length > 50){
+				alert("eMail Address field must be less than 50 characters");
+				return false;
+			}
+		}
+	</script>
+</head>
+<body>
+	<h3 id="theq"> Fill Out The Questionnaire Below to Submit Your Profile to Our Rush Chairman</h3>
+	<form name="rushform" onsubmit="return validateForm()" action="pages/form_submit.php" method="POST">
+		<div id="form">
+		First Name:<br>
+			<input class="recruiti" type="text" name="firstname"><br>
+		Last Name:<br>
+			<input class="recruiti" type="text" name="lastname"><br>
+		Hometown:<br>
+			<input class="recruiti" type="text" name="hometown"><br>
+		High School:<br>
+			<input class="recruiti" type="text" name="highschool"><br>
+		Email Address:<br>
+			<input class="recruiti" type="text" name="email"><br>
+			<input class="recruiti" type="submit" value="Submit" name="submit">
+		</div>
+	</form>
+</body>
