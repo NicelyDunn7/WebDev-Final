@@ -1,0 +1,47 @@
+<head>
+	<script>
+		$(function(){
+			$('#lgn').click(function(){
+				$.post('pages/loginhandler.php',
+				{
+					command: 'login',
+					username: $('#username').val(),
+					password: $('#password').val()
+				},
+				function(data){
+					$('#dbshell').html(data);
+				});
+			});
+			$('#logout').click(function(){
+				$('#username').val('');
+				$('#password').val('');
+				$.post('pages/loginhandler.php',
+				{
+					command: 'logout'
+				},
+				function(data){
+					$('#dbshell').html(data);
+				});
+			});
+			$('#get').click(function(){
+				$.post('pages/loginhandler.php',
+				{
+					command: 'get'
+				},
+				function(data){
+					$('#dbshell').html(data);
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="loginshell">
+	Username: <input type="text" id="username">
+	Password: <input type="password" id="password">
+	<button id="lgn">Login</button>
+	<button id="logout">Logout</button>
+	<button id="get">Get Database</button>
+	</div>
+	<div id="dbshell">Please Log In To View The Rush Database</div>
+</body>
