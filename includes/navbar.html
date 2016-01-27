@@ -1,0 +1,60 @@
+<head>
+	<script>
+		$(document).ready(function(){
+			$("#welcome").click(function(){
+				$.ajax({
+					type: "GET",
+					url: "http://babbage.cs.missouri.edu/~dpdbp7/final/pages/welcome.html",
+					dataType: "html",
+					success: function(html){setHTML(html);}
+				});
+			});
+			$("#brotherhood").click(function(){
+				$.ajax({
+					type: "GET",
+					url: "http://babbage.cs.missouri.edu/~dpdbp7/final/pages/brotherhood.html",
+					dataType: "html",
+					success: function(html){setHTML(html);}
+				});
+			});
+			$("#philanthropy").click(function(){
+				$.ajax({
+					type: "GET",
+					url: "http://babbage.cs.missouri.edu/~dpdbp7/final/pages/philanthropy.html",
+					dataType: "html",
+					success: function(html){setHTML(html);}
+				});
+			});
+			$("#recruitment").click(function(){
+				$.ajax({
+					type: "GET",
+					url: "http://babbage.cs.missouri.edu/~dpdbp7/final/pages/recruitment.html",
+					dataType: "html",
+					success: function(html){setHTML(html);}
+				});
+			});
+			$("#login").click(function(){
+				$.ajax({
+					type: "GET",
+					url: "http://babbage.cs.missouri.edu/~dpdbp7/final/pages/login.html",
+					dataType: "html",
+					success: function(html){setHTML(html);}
+				});
+			});
+		});
+		function setHTML(html){
+			$("#content").html(html);
+		}
+	</script>
+</head>
+<body>
+	<div id="navbar">
+		<ul id="bar">
+			<li id="welcome">Home</a></li>
+			<li id="brotherhood">Brotherhood</a></li>
+			<li id="philanthropy">Philanthropy</a></li>
+			<li id="recruitment">Recruitment</a></li>
+			<li id="login">Login</a></li>
+		</ul>
+	</div>
+</body>
